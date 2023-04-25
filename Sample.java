@@ -1,9 +1,23 @@
-/* HelloWorld.java
+/* CallingMethodsInSameClass.java
+ *
+ * illustrates how to call static methods a class
+ * from a method in the same class
  */
 
-public class HelloWorld
+public class CallingMethodsInSameClass
 {
 	public static void main(String[] args) {
-		System.out.println("Hello india 1234 today World!");
+		printOne();
+		printOne();
+		printTwo();
+	}
+
+	public static void printOne() {
+		System.out.println("Hello World");
+	}
+
+	public static void printTwo() {
+		printOne();
+		printOne();
 	}
 }
